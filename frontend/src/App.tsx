@@ -5,7 +5,7 @@ import {
   Sparkles, Target, TrendingUp, X
 } from "lucide-react";
 
-const API = (import.meta.env.VITE_API_BASE_URL || "http://localhost:8000").replace(/\/$/, "");
+const API = (import.meta.env.VITE_API_BASE_URL || "").replace(/\/$/, "");
 
 type Task = { key: string; title: string; detail: string; checked: boolean };
 type Week = { week: number; title: string; focus: string; tasks: Task[]; completed: number; total: number };
